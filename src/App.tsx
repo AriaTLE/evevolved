@@ -8,6 +8,7 @@ export default function App() {
   return (
     <MantineProvider theme={theme}>
       <Router />
+
     </MantineProvider>
   );
 }

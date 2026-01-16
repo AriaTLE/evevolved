@@ -15,7 +15,7 @@ jobs:
           name: Build and Push Docker image
           command: |
             # Define image name and tag using a built-in environment variable
-            IMAGE_NAME="your_dockerhub_username/your_image_repo"
+            IMAGE_NAME="ariatle/evevolved"
             TAG="0.1.$CIRCLE_BUILD_NUM"
 
             # Log in to Docker Hub using environment variables
