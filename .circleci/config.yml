@@ -21,7 +21,7 @@ jobs:
             # Log in to Docker Hub using environment variables
             # DOCKERHUB_USERNAME and DOCKERHUB_PASSWORD must be set in CircleCI
             echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
-            
+            echo "hello"
             # Pull the existing base image as a cache source (optional)
             docker pull "$IMAGE_NAME:latest" || true
 
