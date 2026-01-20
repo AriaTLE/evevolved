@@ -45,4 +45,12 @@ docker tag evevolved-fe:latest us-central1-docker.pkg.dev/fine-method-482814-i2/
 
 docker push us-central1-docker.pkg.dev/fine-method-482814-i2/evevolved/evevolved-fe:latest
 
-## Kube Deployr
+## Kube Deploy
+
+tar -cvf dist.tar.gz ./dist
+
+kubectl cp ./dist.tar.gz nginx-frontend-deployment-5759c67558-8v67w:/usr/share/nginx/html
+
+kubectl exec -it nginx-frontend-deployment-5759c67558-8v67w -- /bin/sh
+
+cd /usr/share/nginx/html
