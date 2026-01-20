@@ -31,4 +31,18 @@ This template comes with the following features:
 
 - `storybook` – starts storybook dev server
 - `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+- `prettier:write` – formats all files with Prettie
+
+# Docker Build
+
+docker build -t evevolved-fe .
+--platform linux/amd64
+## Docker Tag
+
+docker tag evevolved-fe:latest us-central1-docker.pkg.dev/fine-method-482814-i2/evevolved/evevolved-fe:latest
+
+## Docker Push
+
+docker push us-central1-docker.pkg.dev/fine-method-482814-i2/evevolved/evevolved-fe:latest
+
+## Kube Deployr

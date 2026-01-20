@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-frontend-deployment
+  labels:
+    app: nginx-frontend
+spec:
+  replicas: 3 # Desired number of pods
+  selector:
+    matchLabels:
+      app: nginx-frontend
+  template:
+    metadata:
+      labels:
+        app: nginx-frontend
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest # Uses the latest official NGINX image
+          ports:
+            - containerPort: 80 # NGINX listens on port 80 by default
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-frontend-service
+spec:
+  selector:
+    app: nginx-frontend # Matches the label in the Deployment template
+  type: LoadBalancer # Use LoadBalancer for cloud environments; use NodePort for local/bare metal
+  ports:
+    - protocol: TCP
+      port: 80 # The port the Service itself will expose
+      targetPort: 80 # The port the NGINX container is listening on
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: gce
+  generation: 1
+  name: evevolved-fe-ingress
+  namespace: default
+spec:
+  defaultBackend:
+    service:
+      name: nginx-frontend-service
+      port:
+        number: 80
