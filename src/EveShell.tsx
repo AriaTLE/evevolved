@@ -1,5 +1,6 @@
 import { AppShell, Burger, Group, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { NavBar } from '@/components/NavBar';
 import { Welcome } from '@/components/Welcome/Welcome';
 
 
@@ -14,18 +15,9 @@ export function EveShell() {
         padding="md"
       >
         <AppShell.Header>
-          <Group px="md">
-            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-            <Text
-              inherit
-              variant="gradient"
-              component="span"
-              gradient={{ from: 'pink', to: 'yellow' }}
-            >
-              <br />
-              EveVolved
-            </Text>
-          </Group>
+          {/*<Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />*/}
+
+          <NavBar />
         </AppShell.Header>
         <AppShell.Navbar p="md">
           This is our nav for mobile and desktop shrink you window to see.
