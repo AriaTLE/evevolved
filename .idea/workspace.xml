@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3739a5bb-9741-4905-82d7-264eb486dc52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/UserModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.README.md.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EveShell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EveShell.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ingress.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <workItem from="1768419050075" duration="6045000" />
       <workItem from="1768498436419" duration="2665000" />
       <workItem from="1768527598638" duration="5161000" />
-      <workItem from="1768886421836" duration="15455000" />
+      <workItem from="1768886421836" duration="18451000" />
     </task>
     <servers />
   </component>

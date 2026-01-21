@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Burger, Text } from '@mantine/core';
-import { JoinUs } from '@/components/JoinUs/JoinUs';
 import styles from './NavBar.module.css';
 
 // import {JoinUs} from "@/components/JoinUs/JoinUs";
