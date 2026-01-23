@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Burger, Text } from '@mantine/core';
 import styles from './NavBar.module.css';
 
+
 // import {JoinUs} from "@/components/JoinUs/JoinUs";
 
 const NavBar = () => {
@@ -24,8 +25,17 @@ const NavBar = () => {
       </div>
       <div className="navbar-center" />
       <div className="navbar-right">
-        join us
-        {/*<JoinUs/>*/}
+        {' '}
+        <a href="/" className="logo">
+          <Text
+            inherit
+            variant="gradient"
+            component="span"
+            gradient={{ from: 'pink', to: 'yellow' }}
+          >
+            join us
+          </Text>
+        </a>
       </div>
     </nav>
   );

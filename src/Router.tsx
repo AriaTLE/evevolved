@@ -5,8 +5,12 @@ import { EveShell } from './EveShell';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <EveShell />,
+    element: <EveShell />
   },
+  // {
+  //   path: '/joinus',
+  //   element: <Join
+  // }
 ]);
 
 export function Router() {
